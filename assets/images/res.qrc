@@ -1,0 +1,16 @@
+<RCC>
+  <qresource prefix="Images">
+    <file>chess.png</file>
+    <file>ai.png</file>
+    <file>certificate.png</file>
+    <file>play.png</file>
+    <file>copyToClipboard.png</file>
+    <file>elo.png</file>
+    <file>nameSurname.png</file>
+    <file>password.png</file>
+    <file>user.png</file>
+    <file>loginIcon.png</file>
+    <file>registerIcon.png</file>
+    <file>puzzles.png</file>
+  </qresource>
+</RCC>

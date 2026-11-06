@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Local configuration / secrets
+.env
+
+# User database (created automatically on first run, contains accounts)
+data/*.db
+data/*.db-journal
+
+# Stockfish engine (GPL-3.0, downloaded separately - see README)
+Stockfish/
+stockfish*/
+*.exe
+
+# Raw scraped source text (puzzles are shipped in data/puzzles.json)
+tools/matein2puzzles.txt
+
+# Local backup of the original files
+_original_backup/
+
+# Build output
+build/
+dist/
+*.spec
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

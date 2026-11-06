@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>371</width>
+    <height>539</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>381</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="background">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>371</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#background {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+                                stop:0 #2c3e50, 
+                                stop:0.5 #34495e, 
+                                stop:1 #2c3e50); /* Gradient arka plan */
+    border: 2px solid #34495e;     /* Kenarlık rengi */
+    border-radius: 0px;          /* Kenarların köşelerini yuvarlama */
+    padding: 5px;                 /* Kenarlık ile metin arasındaki boşluk */
+    color: white;                 /* Metin rengi */
+    font: bold 14px;              /* Kalın ve 14 piksel boyutunda yazı tipi */
+    text-align: center;           /* Metni ortalama */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="usernameEdit">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>45</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0,0,0,0);
+border:none;
+border-bottom:4px solid rgba(105,118,132,255);
+color:white;
+padding-bottom:7px;</string>
+    </property>
+    <property name="placeholderText">
+     <string>Kullanıcı adı</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="passwordEdit">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>115</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0,0,0,0);
+border:none;
+border-bottom:4px solid rgba(105,118,132,255);
+color:white;
+padding-bottom:7px;</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Şifre</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="geriDonButon">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>480</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#geriDonButon{
+	border: 2px solid white;
+	border-radius:25px;
+	color: white;
+}
+
+QPushButton#geriDonButon:hover{
+	background-color: qlineargradient(
+        spread:pad, x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(252, 243, 202, 255),
+		stop:1 rgba(251, 80, 80, 255)
+    ); /* Gradient arka plan rengi */
+    border: 2px solid black;
+	color: white;
+}
+
+QPushButton#geriDonButon:pressed{
+	background-color: qlineargradient(
+        spread:pad, x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(252, 243, 202, 255),
+		stop:1 rgba(179, 29, 29, 255)
+    ); /* Gradient arka plan rengi */
+    border: 2px solid black;
+	color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Geri Dön</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="kaydolButon">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>420</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#kaydolButon{
+	border: 2px solid white;
+	border-radius:25px;
+	color: white;
+}
+
+QPushButton#kaydolButon:hover{
+	background-color: qlineargradient(
+        spread:pad, x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(252, 243, 202, 255),
+		stop:1 rgba(50, 190, 255, 255)
+    ); /* Gradient arka plan rengi */
+    border: 2px solid black;
+	color: white;
+}
+
+QPushButton#kaydolButon:pressed{
+	background-color: qlineargradient(
+        spread:pad, x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(220, 220, 220, 255),
+        stop:1 rgba(50, 120, 255, 255)
+    ); /* Gradient arka plan rengi */
+   	border: 2px solid black;
+	color: white;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Kaydol</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="nameEdit">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>185</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0,0,0,0);
+border:none;
+border-bottom:4px solid rgba(105,118,132,255);
+color:white;
+padding-bottom:7px;</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+    <property name="placeholderText">
+     <string>İsim</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="surnameEdit">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>255</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0,0,0,0);
+border:none;
+border-bottom:4px solid rgba(105,118,132,255);
+color:white;
+padding-bottom:7px;</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Soyisim</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="eloEdit">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>325</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0,0,0,0);
+border:none;
+border-bottom:4px solid rgba(105,118,132,255);
+color:white;
+padding-bottom:7px;</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Tahmini Elo</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>50</y>
+      <width>32</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Images/user.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>120</y>
+      <width>32</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Images/password.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>190</y>
+      <width>32</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Images/nameSurname.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>260</y>
+      <width>32</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Images/nameSurname.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>330</y>
+      <width>32</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Images/elo.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../assets/images/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>791</width>
+    <height>645</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLineEdit" name="usernameEdit">
+   <property name="geometry">
+    <rect>
+     <x>36</x>
+     <y>20</y>
+     <width>231</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit#usernameEdit {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+                                stop:0 #2c3e50, 
+                                stop:0.5 #34495e, 
+                                stop:1 #2c3e50); /* Gradient arka plan */
+    border: 2px solid #34495e;   /* Kenarlık rengi */
+    border-radius: 20px;         /* Kenarların köşelerini yuvarlama */
+    padding: 5px;                /* Kenarlık ile metin arasındaki boşluk */
+    color: white;                /* Metin rengi */
+    font: 24px;	
+	font-weight: bold;  
+	text-align: center;  
+}
+</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="nameEdit">
+   <property name="geometry">
+    <rect>
+     <x>36</x>
+     <y>70</y>
+     <width>231</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit#nameEdit {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+                                stop:0 #2c3e50, 
+                                stop:0.5 #34495e, 
+                                stop:1 #2c3e50); /* Gradient arka plan */
+    border: 2px solid #34495e;   /* Kenarlık rengi */
+    border-radius: 20px;         /* Kenarların köşelerini yuvarlama */
+    padding: 5px;                /* Kenarlık ile metin arasındaki boşluk */
+    color: white;                /* Metin rengi */
+    font: 24px;	
+	font-weight: bold;  
+	text-align: center;  
+}
+</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="surnameEdit">
+   <property name="geometry">
+    <rect>
+     <x>36</x>
+     <y>120</y>
+     <width>231</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit#surnameEdit {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+                                stop:0 #2c3e50, 
+                                stop:0.5 #34495e, 
+                                stop:1 #2c3e50); /* Gradient arka plan */
+    border: 2px solid #34495e;   /* Kenarlık rengi */
+    border-radius: 20px;         /* Kenarların köşelerini yuvarlama */
+    padding: 5px;                /* Kenarlık ile metin arasındaki boşluk */
+    color: white;                /* Metin rengi */
+    font: 24px;	
+	font-weight: bold;  
+	text-align: center;  
+}
+</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="changePasswordButton">
+   <property name="geometry">
+    <rect>
+     <x>36</x>
+     <y>220</y>
+     <width>231</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#changePasswordButton {
+   background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                      stop:0 #1B2671, 
+                                      stop:0.5 #34195E, 
+                                      stop:1 #1B2631);
+    border: 2px solid #1B2631;
+    color: white;
+	border-radius: 20px;
+}
+
+QPushButton#changePasswordButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                      stop:0 #4CA7AF, 
+                                      stop:0.5 #2C3E90, 
+                                      stop:1 #4CA4AF);
+}
+
+QPushButton#changePasswordButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                      stop:0 #2C3E50, 
+                                      stop:0.5 #4CA1AF, 
+                                      stop:1 #2C3E50);
+    border: 2px solid #2C3E50;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Şifre Değiştir</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="updateButton">
+   <property name="geometry">
+    <rect>
+     <x>36</x>
+     <y>170</y>
+     <width>231</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#updateButton {
+   background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                      stop:0 #1B2631, 
+                                      stop:0.5 #34495E, 
+                                      stop:1 #1B2631);
+    border: 2px solid #1B2631;
+    color: white;
+	border-radius: 20px;
+}
+
+QPushButton#updateButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                      stop:0 #4CA1AF, 
+                                      stop:0.5 #2C3E50, 
+                                      stop:1 #4CA1AF);
+}
+
+QPushButton#updateButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                      stop:0 #2C3E50, 
+                                      stop:0.5 #4CA1AF, 
+                                      stop:1 #2C3E50);
+    border: 2px solid #2C3E50;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Güncelle</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="eloWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>20</y>
+     <width>441</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>-1</y>
+      <width>461</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="eloLayout"/>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="puzzleEloWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>340</y>
+     <width>441</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>461</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="puzzleLayout"/>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="gamesPlayed">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>385</y>
+     <width>241</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Oynanan Oyun: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="gamesWon">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>425</y>
+     <width>241</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Kazanılan Oyun: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="winRate">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>465</y>
+     <width>241</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Kazanma Oranı:  </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="puzzlesTotal">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>505</y>
+     <width>241</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Toplam Çözülen: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="puzzlesSuccess">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>545</y>
+     <width>241</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Doğru Çözülen: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="puzzleSuccessRate">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>585</y>
+     <width>241</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Doğruluk Oranı: </string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>380</y>
+     <width>20</width>
+     <height>250</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>380</y>
+     <width>20</width>
+     <height>250</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>620</y>
+     <width>271</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>370</y>
+     <width>271</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="gamesPlayed_2">
+   <property name="geometry">
+    <rect>
+     <x>48</x>
+     <y>346</y>
+     <width>201</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>İSTATİSTİKLERİNİZ</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="geriDonButon">
+   <property name="geometry">
+    <rect>
+     <x>36</x>
+     <y>270</y>
+     <width>231</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#geriDonButon {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+                                stop:0 #ff4b5c, 
+                                stop:0.5 #ff6f61, 
+                                stop:1 #ff4b5c); /* Gradient arka plan */
+    border: 2px solid #ff4b5c;   /* Kenarlık rengi */
+    border-radius: 20px;         /* Kenarların köşelerini yuvarlama */
+    color: white;                /* Metin rengi */
+    padding: 5px;                /* Kenarlık ile metin arasındaki boşluk */
+}
+
+QPushButton#geriDonButon:hover {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+                                stop:0 #ff6f61, 
+                                stop:0.5 #ff8a80, 
+                                stop:1 #ff6f61); /* Gradient arka plan */
+    border: 2px solid #ff6f61;   /* Kenarlık rengi */
+}
+
+QPushButton#geriDonButon:pressed {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, 
+                                stop:0 #d32f2f, 
+                                stop:0.5 #f44336, 
+                                stop:1 #d32f2f); /* Gradient arka plan */
+    border: 2px solid #d32f2f;   /* Kenarlık rengi */
+    padding: 5px;                /* Kenarlık ile metin arasındaki boşluk */
+    border-radius: 20px;         /* Kenarların köşelerini yuvarlama */
+    color: white;                /* Metin rengi */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Geri dön</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

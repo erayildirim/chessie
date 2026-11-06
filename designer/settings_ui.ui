@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>173</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>60</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>-10</y>
+     <width>181</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Oyun süresi seçiniz</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>110</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#buttonBox {
+   background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                      stop:0 #1B2631, 
+                                      stop:0.5 #34495E, 
+                                      stop:1 #1B2631);
+    border: 2px solid #1B2631;
+    color: white;
+	border-radius: 10px;
+}
+
+QPushButton#buttonBox:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                      stop:0 #4CA1AF, 
+                                      stop:0.5 #2C3E50, 
+                                      stop:1 #4CA1AF);
+}
+
+QPushButton#buttonBox:pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                      stop:0 #2C3E50, 
+                                      stop:0.5 #4CA1AF, 
+                                      stop:1 #2C3E50);
+    border: 2px solid #2C3E50;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Tamam</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

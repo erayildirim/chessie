@@ -1,0 +1,5 @@
+PyQt5>=5.15
+chess>=1.9
+requests>=2.31
+matplotlib>=3.7
+openai>=1.30
